@@ -1,0 +1,23 @@
+{
+  "name": "xiaoxi",
+  "version": "1.0.0",
+  "description": "An assistant",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhujunxi/xiaoxi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhujunxi/xiaoxi/issues"
+  },
+  "homepage": "https://github.com/zhujunxi/xiaoxi#readme",
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "nodemailer": "^6.4.4",
+    "qs": "^6.9.1"
+  }
+}
