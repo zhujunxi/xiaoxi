@@ -7,11 +7,26 @@ const path = require("path");
 * 当周OKR链接按钮
 */
 
-module.exports = function generateHtml(htmlData) {
-    const template = ejs.compile(
-        fs.readFileSync(path.resolve(__dirname, "../template/morningDaily.ejs"), "utf-8")
-    );
-    const html = template(htmlData)
-
-    return html
+module.exports = {
+    morningDaily: function (params) {
+        const template = ejs.compile(
+            fs.readFileSync(path.resolve(__dirname, "../template/morningDaily.ejs"), "utf-8")
+        );
+        const html = template(params)
+        return html
+    },
+    eveningDaily: function (params) {
+        const template = ejs.compile(
+            fs.readFileSync(path.resolve(__dirname, "../template/eveningDaily.ejs"), "utf-8")
+        );
+        const html = template(params)
+        return html
+    },
+    weekend: function (params) {
+        const template = ejs.compile(
+            fs.readFileSync(path.resolve(__dirname, "../template/weekend.ejs"), "utf-8")
+        );
+        const html = template(params)
+        return html
+    }
 }

@@ -1,8 +1,8 @@
+const scheduleHandler = require('./js/scheduleHandler')
 const sendMail = require("./js/sendMail")
-const generateTemp = require("./js/generateTemp")
-const utils = require('./utils/utils')
 
+console.log('开始执行任务');
 
-sendMail(generateTemp({
-    link: utils.getUrlDate()
-}))
+scheduleHandler(function (res) {
+    sendMail(res.title, res.content)
+})

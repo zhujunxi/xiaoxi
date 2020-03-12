@@ -1,5 +1,5 @@
 module.exports = {
-    getUrlDate: function (date = new Date()) {
+    getCurWeekUrlSuffix: function (date = new Date()) {
         function getFullWeekInMonth(n) {
             let curMonthDays = new Date(n.getFullYear(), (n.getMonth() + 1), 0).getDate(),
                 weekTemp = [],
